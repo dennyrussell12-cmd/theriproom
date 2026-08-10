@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rip Room Collectibles | Pearland TCG & Sports Cards</title>
+    <!-- Google Fonts & Tailwind CSS for modern styling -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <script src="https://tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0B0F19',
+                            card: '#161D30',
+                            accent: '#3B82F6',
+                            highlight: '#10B981'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .gradient-bg { background: radial-gradient(circle at top right, rgba(59, 130, 246, 0.15), transparent 50%), radial-gradient(circle at bottom left, rgba(16, 185, 129, 0.1), transparent 50%); }
+    </style>
+</head>
+<body class="bg-brand-dark text-gray-100 min-h-screen gradient-bg">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-brand-dark/80 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-extrabold tracking-wider bg-gradient-to-r from-blue-500 to-emerald-400 bg-clip-text text-transparent">
+                THE RIP ROOM
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold tracking-wide text-gray-400">
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#inventory" class="hover:text-white transition">Inventory</a>
+                <a href="#trade" class="hover:text-white transition">Trade Estimator</a>
+                <a href="#contact" class="hover:text-white transition">Hours & Location</a>
+            </nav>
+            <a href="#trade" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-xl text-sm font-bold transition shadow-lg shadow-blue-600/20">
+                Estimate Trade Value
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-6 pt-16 pb-24 text-center md:text-left md:flex md:items-center md:space-x-12">
+        <div class="md:w-1/2 space-y-6">
+            <div class="inline-flex items-center space-x-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full px-4 py-1.5 text-xs font-bold text-emerald-400">
+                <span>⭐ Perfect 5.0 Rated Local Shop</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
+                Pearland's Premier <br>
+                <span class="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">TCG & Sports Card</span> Hub
+            </h1>
+            <p class="text-gray-400 text-lg max-w-xl">
+                Step into a premier browsing experience built by collectors, for collectors. Find premium sealed boxes, rare bulk singles, and custom streaming booths inside our private Vault.
+            </p>
+            <div class="pt-4 flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
+                <a href="#inventory" class="bg-gray-800 hover:bg-gray-700 border border-gray-700 px-8 py-3.5 rounded-xl font-semibold transition">
+                    Browse Categories
+                </a>
+                <a href="#contact" class="bg-emerald-600 hover:bg-emerald-500 px-8 py-3.5 rounded-xl font-semibold transition shadow-lg shadow-emerald-600/20">
+                    Visit Storefront
+                </a>
+            </div>
+        </div>
+        <div class="hidden md:block md:w-1/2 relative">
+            <div class="absolute inset-0 bg-blue-500/10 blur-3xl rounded-full"></div>
+            <!-- Dynamic modern placeholder representing high-end collectible shelves -->
+            <div class="relative bg-gradient-to-br from-brand-card to-gray-900 border border-gray-800 rounded-3xl p-8 shadow-2xl space-y-6">
+                <div class="flex justify-between items-center border-b border-gray-800 pb-4">
+                    <span class="text-xs uppercase tracking-widest text-gray-500 font-bold">Featured Showcase</span>
+                    <span class="text-xs text-blue-400 font-semibold">Updated Today</span>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-brand-dark/50 p-4 rounded-xl border border-gray-800/80">
+                        <div class="w-full h-32 bg-gray-800 rounded-lg mb-3 flex items-center justify-between px-4 text-gray-600 text-xs">Sealed Boxes</div>
+                        <h4 class="font-bold text-sm">TCG Elite Boxes</h4>
+                    </div>
+                    <div class="bg-brand-dark/50 p-4 rounded-xl border border-gray-800/80">
+                        <div class="w-full h-32 bg-gray-800 rounded-lg mb-3 flex items-center justify-between px-4 text-gray-600 text-xs">Vintage Grails</div>
+                        <h4 class="font-bold text-sm">Graded Sports Slabs</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grid Category Section -->
+    <section id="inventory" class="bg-gray-950 py-24 border-t border-b border-gray-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-xl mx-auto space-y-3 mb-16">
+                <h2 class="text-3xl font-bold tracking-tight">Explore the Vault Inventory</h2>
+                <p class="text-gray-400 text-sm">We carry a diverse catalog ranging from raw binder fill to perfectly preserved investments.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Box 1 -->
+                <div class="bg-brand-card border border-gray-800 p-8 rounded-2xl hover:border-gray-700 transition space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 font-bold">📦</div>
+                    <h3 class="text-xl font-bold">TCG Booster Boxes</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Always stocking the latest English and imported Japanese sets. Secure your single booster box to open straight from factory sealed cases.</p>
+                </div>
+                <!-- Box 2 -->
+                <div class="bg-brand-card border border-gray-800 p-8 rounded-2xl hover:border-gray-700 transition space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 font-bold">🃏</div>
+                    <h3 class="text-xl font-bold">Bulk & Rare Singles</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Sift through thousands of carefully cataloged raw singles, meta staples, and individual showcase gems to complete your custom collection binder.</p>
+                </div>
+                <!-- Box 3 -->
+                <div class="bg-brand-card border border-gray-800 p-8 rounded-2xl hover:border-gray-700 transition space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 font-bold">🎙️</div>
+                    <h3 class="text-xl font-bold">The Content Suite</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Access our built-in high-definition live streaming studio desk setup tailored perfectly for real-time box breaks, content creation, and group pack openings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Trade-In Calculator Section -->
+    <section id="trade" class="max-w-3xl mx-auto px-6 py-24">
+        <div class="bg-gradient-to-br from-brand-card to-gray-900 border border-gray-800 rounded-3xl p-8 md:p-12 shadow-xl space-y-6">
+            <div class="space-y-2">
+                <h2 class="text-2xl md:text-3xl font-bold">Store Trade Estimator</h2>
+                <p class="text-sm text-gray-400">Get a transparent upfront evaluation based on standard marketplace market value pricing guidelines.</p>
+            </div>
+            
+            <div class="space-y-4 pt-4">
+                <div>
+                    <label class="block text-xs uppercase tracking-wider text-gray-400 font-bold mb-2">Estimated Market Value ($)</label>
+                    <input type="number" id="marketValueInput" placeholder="Enter total TCGPlayer / Market Value..." class="w-full bg-brand-dark border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 text-white font-semibold transition">
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4 pt-4">
+                    <div class="bg-brand-dark/40 p-5 rounded-xl border border-gray-800">
+                        <span class="block text-xs text-gray-500 font-bold uppercase tracking-wider mb-1">Cash Out Value (70%)</span>
+                        <span id="cashEstimate" class="text-2xl font-black text-white">$0.00</span>
+                    </div>
+                    <div class="bg-brand-dark/40 p-5 rounded-xl border border-gray-800 border-l-2 border-l-emerald-500">
+                        <span class="block text-xs text-gray-500 font-bold uppercase tracking-wider mb-1">Store Credit (80%)</span>
+                        <span id="creditEstimate" class="text-2xl font-black text-emerald-400">$0.00</span>
+                    </div>
+                </div>
+                <div class="text-center text-xs text-gray-500 pt-2">
